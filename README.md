@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Hex Editor & Binary Forensics
+OHex is a professional hex editor and binary forensics toolkit for viewing, hashing, entropy mapping, and signature carving. Investigators can open artefacts in a TUI-oriented workflow or run quick CLI probes for info, hashes, entropy, and carved signatures. Built for defensive binary triage on Linux.
 
 ---
 
 ## ✨ Features
 
-- Hex editor and binary forensics toolkit — viewer, carver, entropy, strings, PE/ELF/ZIP/PDF
+- Hex viewer/editor oriented binary inspection
+- Quick --info JSON summary for a target file
+- Hash and entropy probes without entering the full UI
+- Signature carving from binary blobs
+- Strings and format-aware forensics helpers (PE/ELF/ZIP/PDF oriented)
+- Width and colour controls for terminal presentation
 
 ---
 
@@ -38,7 +43,10 @@ Hex Editor & Binary Forensics
 ## 🚀 Usage
 
 ```bash
-./OHex
+./OHex sample.bin
+./OHex sample.bin --hash --entropy
+./OHex sample.bin --carve --info
+./OHex --help
 ```
 
 ---
